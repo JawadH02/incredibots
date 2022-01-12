@@ -572,7 +572,8 @@ ABOUT US
 .btn {
   background-color: #fb3e3e;
   border-color: #fb3e3e;
-  border-radius: 1px;
+  border-radius: 2px;
+  border: none;
   outline: none;
   color: #fff;
   padding: 10px 20px;
@@ -681,28 +682,30 @@ BUILDS
 }
 
 .builds__wrapper {
-  margin-top: 48px;
+  margin-top: 48px !important;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .build {
   padding: 0 12px;
+  width: calc(100% / 3);
 }
 
 .build__card {
   padding: 50px 40px;
+  margin-top: 30px;
   border: 1px solid #ecf0f5;
   border-radius: 8px;
-  width: 100%;
-  max-width: 1200px;
   text-align: center;
   font-weight: 400;
   line-height: 1.5;
   color: #242424;
   box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1) !important;
   transition: all 300ms ease;
-  position: relative;
 }
 
 .build__card:hover {
@@ -711,11 +714,7 @@ BUILDS
 
 .build__img {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  border-radius: 5px;
 }
 
 .build__border {
@@ -737,9 +736,22 @@ BUILDS
   margin-bottom: 16px;
 }
 
+.build__btn {
+  width: 100%;
+  max-width: 107px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
 @media (max-width: 928px) {
   .value {
     width: 100%;
+  }
+
+  .build {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .value__subtitle {
