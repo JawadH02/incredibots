@@ -19,6 +19,7 @@ document.addEventListener("click", (evt) => {
       video.hidden = false;
       playBtn.classList.add("play__hidden");
       hideContent.classList.add("content__hidden");
+      video.src += "";
       return;
     }
     // Go up the DOM
@@ -29,14 +30,15 @@ document.addEventListener("click", (evt) => {
   video.hidden = true;
   playBtn.classList.remove("play__hidden");
   hideContent.classList.remove("content__hidden");
+  video.src += "";
 });
 
 // MENU BACKDROP OPEN
 
 function openMenu() {
-    document.body.classList.add("menu--open")
+  document.body.classList.add("menu--open");
 }
 
 function closeMenu() {
-    document.body.classList.remove("menu--open")
+  document.body.classList.remove("menu--open");
 }
