@@ -817,6 +817,7 @@ CONTACT
 .contact__personal--info {
   display: flex;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .contact__input {
@@ -852,10 +853,10 @@ CONTACT
 
 .modal__overlay--loading {
   color: #fff;
-  font-size: 32px;
+  font-size: 28px;
   display: none;
   position: absolute;
-  top: 15px;
+  top: 18px;
   right: 50px;
 }
 
