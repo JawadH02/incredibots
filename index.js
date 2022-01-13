@@ -46,7 +46,6 @@ function closeMenu() {
 function contact(event) {
   const form = document.querySelector(".contact__form");
   event.preventDefault();
-  form.reset();
 
   const loading = document.querySelector(".modal__overlay--loading");
   const success = document.querySelector(".modal__overlay--success");
@@ -56,7 +55,7 @@ function contact(event) {
   emailjs
     .sendForm(
       "service_fxac1cl",
-      "template_i2g3g4s",
+      "template_pia17aq",
       event.target,
       "user_jl5VpeVakRdeOB5W1XDRJ"
     )
@@ -64,6 +63,7 @@ function contact(event) {
       loading.classList.remove("modal__overlay--visible");
       btnText.classList.remove("contact__btn--text--visible");
       success.classList += " modal__overlay--visible";
+      form.reset();
     })
     .catch(() => {
       loading.classList.remove("modal__overlay--visible");
