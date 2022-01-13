@@ -55,7 +55,7 @@ function contact(event) {
   emailjs
     .sendForm(
       "service_fxac1cl",
-      "template_pia17aq",
+      "template_i2g3g4s",
       event.target,
       "user_jl5VpeVakRdeOB5W1XDRJ"
     )
