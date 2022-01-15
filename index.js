@@ -19,7 +19,6 @@ document.addEventListener("click", (evt) => {
       video.hidden = false;
       playBtn.classList.add("play__hidden");
       hideContent.classList.add("content__hidden");
-      video.src += "";
       return;
     }
     // Go up the DOM

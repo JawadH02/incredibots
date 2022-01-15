@@ -827,9 +827,11 @@ CONTACT
 
 .contact__form--name {
   margin-right: 12px;
+  flex: 1;
 }
 .contact__form--email {
   margin-left: 12px;
+  flex: 1;
 }
 
 .contact__form--subject {
@@ -839,6 +841,7 @@ CONTACT
 
 .contact__form--message {
   width: 100%;
+  min-height: 100px;
 }
 
 .contact__btn--wrapper {
@@ -898,7 +901,7 @@ FOOTER
 */
 
 footer {
-  padding: 50px 0;
+  padding: 100px 0;
   background-color: #272a33;
   position: relative;
   display: flex;
