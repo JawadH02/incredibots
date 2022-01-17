@@ -1031,6 +1031,10 @@ footer {
   .btn__menu {
     display: block;
   }
+
+  #play__video {
+    width: 100%;
+  }
 }
 
 @media (min-width: 928px) {
